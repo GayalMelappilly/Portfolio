@@ -7,9 +7,9 @@ type Props = {}
 const Social = (props: Props) => {
   return (
     <div className='flex gap-2 justify-center'>
-        <FaSquareGithub className='text-zinc-100' size={30} />
-        <FaLinkedin className='text-zinc-100' size={30} />
-        <FaSquareXTwitter className='text-zinc-100' size={30} />
+        <FaSquareGithub className='text-zinc-100 hover:text-[#DAA520]' size={30} />
+        <FaLinkedin className='text-zinc-100 hover:text-[#DAA520]' size={30} />
+        <FaSquareXTwitter className='text-zinc-100 hover:text-[#DAA520]' size={30} />
     </div>
   )
 }

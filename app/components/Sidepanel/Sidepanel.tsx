@@ -15,7 +15,6 @@ const Sidepanel = (props: Props) => {
                 <p className='text-[#DAA520] bg-[#0f0f0f] rounded-md p-2 text-center font-bold text-sm shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>Full Stack Web Developer</p>
                 <hr className='' />
                 <Contact />
-                <Resume />
                 <div className='absolute bottom-2 left-1/2 transform -translate-x-1/2 '>
                     <Social />
                 </div>

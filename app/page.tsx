@@ -11,7 +11,7 @@ const page = (props: Props) => {
       <div className='flex h-full'>
         <Sidepanel />
         <div className='m-5'></div>
-        <Content />
+        <Content tab='home' heading='' />
       </div>
         <Particles className="absolute inset-0 pointer-events-none" quantity={10} />
     </div>

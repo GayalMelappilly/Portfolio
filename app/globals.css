@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.triangle{
-    width: 50px;
-    height: 100px;
-    border-top: 50px solid transparent;
-    border-right: 75px solid #3b82f6; 
-    border-bottom: 50px solid transparent;  
-}
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE and Edge */
+.scrollbar-hidden {
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 

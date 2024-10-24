@@ -1,4 +1,7 @@
+import Link from 'next/link'
 import React from 'react'
+import Resume from '../Resume/Resume'
+require('dotenv')
 
 type Props = {}
 
@@ -12,18 +15,18 @@ const Navbar = (props: Props) => {
             </div>
             <div className="w-full block  flex-grow lg:flex lg:items-center lg:w-auto">
                 <div className="text-sm lg:flex-grow">
-                    <a href="#about-tab" className="block mt-4 lg:inline-block lg:mt-0 text-[#DAA520] hover:text-white mx-6">
+                    <Link href='#about-tab' className="block mt-4 lg:inline-block lg:mt-0 text-[#DAA520] hover:text-white mx-6">
                         A B O U T
-                    </a>
-                    <a href="#projects-tab" className="block mt-4 lg:inline-block lg:mt-0 text-[#DAA520] hover:text-white mx-6">
+                    </Link>
+                    <Link href="#projects-tab" className="block mt-4 lg:inline-block lg:mt-0 text-[#DAA520] hover:text-white mx-6">
                         P R O J E C T S
-                    </a>
-                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-[#DAA520] hover:text-white mx-6">
+                    </Link>
+                    <Link href="#contact" className="block mt-4 lg:inline-block lg:mt-0 text-[#DAA520] hover:text-white mx-6">
                         C O N T A C T
-                    </a>
+                    </Link>
                 </div>
                 <div>
-                    <a href="#" className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
+                    <Resume />
                 </div>
             </div>
         </nav>
