@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
@@ -12,13 +13,13 @@ const Contact = (props: Props) => {
             <div className='py-3 px-32 mb-6 text-center mt-2'>
                 <p className='text-lg text-white'>Have a project in mind or just want to chat? I'm always open to new ideas and collaborations. Reach out, and let's make something remarkable together!</p>
                 <div className='mt-3'>
-                    <a href="#_" className="relative inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-emerald-600 border-2 border-emerald-600 rounded-lg hover:text-black group hover:bg-[#151515]">
-                        <span className="absolute left-0 block w-full h-0 transition-all bg-emerald-600 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
+                    <Link href={'mailto:gayalsunil@gmail.com'} className="relative inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-emerald-400 border-2 border-emerald-400 rounded-lg hover:text-black group hover:bg-[#151515]">
+                        <span className="absolute left-0 block w-full h-0 transition-all bg-emerald-400 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
                         <span className="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
                             <MdOutlineKeyboardDoubleArrowRight size={30} />
                         </span>
                         <span className="relative">Let's Connect</span>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
