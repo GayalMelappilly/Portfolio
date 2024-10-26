@@ -21,7 +21,7 @@ const Navbar = (props: Props) => {
                     <Link href="#projects-tab" className="block mt-4 lg:inline-block lg:mt-0 text-[#DAA520] hover:text-white mx-6">
                         P R O J E C T S
                     </Link>
-                    <Link href="#contact" className="block mt-4 lg:inline-block lg:mt-0 text-[#DAA520] hover:text-white mx-6">
+                    <Link href="#contact-tab" className="block mt-4 lg:inline-block lg:mt-0 text-[#DAA520] hover:text-white mx-6">
                         C O N T A C T
                     </Link>
                 </div>

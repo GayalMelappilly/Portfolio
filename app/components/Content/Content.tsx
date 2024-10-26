@@ -2,8 +2,9 @@ import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import About from '../About/About'
 import Project from '../Project/Project'
-import Contact from '../Contact/Contact'
 import Home from '../Home/Home'
+import Contact from '../Contact/Contact'
+import Footer from '../Footer/Footer'
 
 type Props = {
   tab: string,
@@ -18,13 +19,21 @@ const Content = (props: Props) => {
       </div>
       <div className='px-10'>
         <Home />
-        <div id='about-id'>
+        <div>
           <About />
         </div>
 
-        <div id='projects-id'>
+        <div>
           <Project />
         </div>
+
+        <div>
+          <Contact />
+        </div>
+
+      </div>
+      <div className='mt-5'>
+        <Footer />
       </div>
     </div>
   )

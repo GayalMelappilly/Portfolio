@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Poppins } from 'next/font/google';
+import { Crimson_Pro } from "next/font/google";
 import "./globals.css";
 
 
@@ -8,6 +9,12 @@ export const poppins = Poppins({
   subsets: ['latin'], 
   weight: ['400', '600', '700'], 
   style: ['normal', 'italic'],
+});
+
+export const crisom_pro = Crimson_Pro({
+  subsets: ['latin'], 
+  weight: ['500'], 
+  style: ['italic'],
 });
 
 export const metadata: Metadata = {
@@ -22,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-[#1E1E1E] h-screen">
+      <body className={` ${poppins} bg-[#1E1E1E] h-screen`}>
         {children}
       </body>
     </html>
